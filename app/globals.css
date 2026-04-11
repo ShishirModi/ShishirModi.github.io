@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 240 10% 12%;
+    --card: 40 15% 95%;
+    --card-foreground: 240 10% 12%;
+    --primary: 240 5% 20%;
+    --primary-foreground: 40 20% 97%;
+    --secondary: 40 10% 90%;
+    --secondary-foreground: 240 10% 25%;
+    --muted: 40 10% 92%;
+    --muted-foreground: 240 5% 45%;
+    --accent: 220 15% 88%;
+    --accent-foreground: 240 10% 15%;
+    --border: 240 5% 87%;
+    --ring: 240 5% 50%;
+    --radius: 0.75rem;
+
+    --glass-bg: 40 20% 97% / 0.6;
+    --glass-border: 240 5% 87% / 0.3;
+    --gradient-start: 220 60% 92%;
+    --gradient-end: 280 40% 92%;
+  }
+
+  .dark {
+    --background: 240 8% 8%;
+    --foreground: 40 10% 90%;
+    --card: 240 6% 12%;
+    --card-foreground: 40 10% 90%;
+    --primary: 40 10% 90%;
+    --primary-foreground: 240 8% 8%;
+    --secondary: 240 5% 18%;
+    --secondary-foreground: 40 10% 85%;
+    --muted: 240 5% 16%;
+    --muted-foreground: 40 5% 55%;
+    --accent: 220 10% 20%;
+    --accent-foreground: 40 10% 88%;
+    --border: 240 5% 18%;
+    --ring: 40 5% 50%;
+
+    --glass-bg: 240 8% 10% / 0.6;
+    --glass-border: 240 5% 25% / 0.3;
+    --gradient-start: 220 40% 12%;
+    --gradient-end: 280 30% 14%;
+  }
+
+  * {
+    border-color: hsl(var(--border));
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  /* Smooth theme transition */
+  html.transitioning,
+  html.transitioning *,
+  html.transitioning *::before,
+  html.transitioning *::after {
+    transition: background-color 0.35s ease,
+      border-color 0.35s ease,
+      color 0.35s ease,
+      box-shadow 0.35s ease,
+      opacity 0.35s ease !important;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* Custom cursor - hide default on desktop */
+@media (pointer: fine) {
+  html {
+    cursor: none;
+  }
+}
+
+/* Gradient blob animation */
+@keyframes blob-float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+  66% {
+    transform: translate(-20px, 15px) scale(0.95);
+  }
+}
+
+/* Scroll indicator bounce */
+@keyframes bounce-subtle {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
