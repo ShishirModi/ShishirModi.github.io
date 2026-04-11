@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Skaitch",
+    "tag": "AI Inference Platform",
+    "description": "End-to-end AI inference platform serving a Stable Diffusion + DeepFaceDrawing pipeline containerised with Docker and orchestrated via Kubernetes with horizontal pod autoscaling (HPA).",
+    "tech": ["Python", "PyTorch", "Stable Diffusion", "GANs", "FastAPI", "Docker", "Kubernetes", "NGINX", "Prometheus", "Grafana"],
+    "github": "",
+    "live": "",
+    "details": "Full case study here"
+  },
+  {
+    "name": "Crowd Psychology State Engine",
+    "tag": "Event-Driven Microservice Backend",
+    "description": "Microservice-based simulation backend using FastAPI and Redis pub/sub, decoupling the probabilistic state engine from downstream consumers via an event-driven message bus supporting concurrent simulation sessions.",
+    "tech": ["Python", "FastAPI", "Redis Pub/Sub", "WebSockets", "Docker Compose", "Golang", "Locust"],
+    "github": "",
+    "live": "",
+    "details": "Full case study here"
+  },
+  {
+    "name": "RiteFit",
+    "tag": "Full-Stack AI Web Application",
+    "description": "Production-grade full-stack application with a React frontend, FastAPI backend, and PostgreSQL persistence layer; integrated live weather APIs to power real-time, AI-driven outfit recommendations with sub-200ms API response times.",
+    "tech": ["Python", "FastAPI", "React", "PostgreSQL", "Docker Compose", "GitHub Actions", "JWT", "OpenAPI"],
+    "github": "",
+    "live": "",
+    "details": "Full case study here"
+  }
+]

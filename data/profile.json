@@ -1,0 +1,13 @@
+{
+  "name": "Shishir Modi",
+  "title": "DevOps & SRE Engineer",
+  "subtitle": "Building & scaling the infrastructure behind AI systems",
+  "bio": "I specialise in AI platform infrastructure and full-stack development — designing containerised, production-grade systems from inference pipelines to event-driven backends. I bring a disciplined engineering mindset to reliability, observability, and scalable deployment across cloud-native environments.",
+  "email": "shishirmodi0815@gmail.com",
+  "social": {
+    "github": "https://github.com/ShishirModi",
+    "linkedin": "https://linkedin.com/in/shishirmodi"
+  },
+  "heroImage": "/img/IMG_7305.jpeg",
+  "aboutImage": "/img/IMG_6417.jpeg"
+}
