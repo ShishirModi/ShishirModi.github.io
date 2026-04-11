@@ -28,7 +28,7 @@ const socialLinks = [
   },
 ];
 
-const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID || "";
+const formspreeId = "mnqokjng";
 
 export function Contact() {
   const [state, handleSubmit] = useForm(formspreeId);
